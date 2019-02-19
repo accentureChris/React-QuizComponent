@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { QuizQuestionButton } from './QuizQuestionButton';
 
-class QuizQuestion extends Component {
+export class QuizQuestion extends Component {
     constructor(props) {
         super(props);
     }
