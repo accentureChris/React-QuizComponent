@@ -4,7 +4,7 @@ import { QuizEnd } from './QuizEnd';
 
 let quizData = require('./quiz_data.json');
 
-export class Quiz extends React.Component {
+class Quiz extends React.Component {
     constructor(props) {
         super(props);
 
