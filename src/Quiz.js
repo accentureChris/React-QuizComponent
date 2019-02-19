@@ -15,17 +15,11 @@ export class Quiz extends React.Component {
 
     render() {
         const isQuizEnd = this.state.quiz_position - 1 === quizData.quiz_questions.length ? true : false;
-        let comp = null;
-
-        if (isQuizEnd) {
-            comp = <QuizEnd />;
-        } else {
-            comp = <QuizQuestion quiz_question={quizData.quiz_questions[this.state.quiz_position - 1]}/>;
-        }
 
         return (<div>
             <div className='QuizQuestion'>
-                {comp}
+                <QuizEnd />
+                <QuizQuestion quiz_question={quizData.quiz_questions[this.state.quiz_position - 1]}/>
             </div>
         </div>);
     }
