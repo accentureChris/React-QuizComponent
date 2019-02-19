@@ -3,7 +3,7 @@ import { QuizQuestion } from './QuizQuestion';
 
 let quizData = require('./quiz_data.json');
 
-export class Quiz extends React.Component {
+export class Quiz extends Component {
     constructor(props) {
         super(props);
 
