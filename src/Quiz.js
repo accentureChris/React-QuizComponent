@@ -14,7 +14,11 @@ export class Quiz extends React.Component {
     }
 
     render() {
-        const isQuizEnd = this.state.quiz_position - 1 === quizData.quiz_questions.length ? true : false;
+        if (this.state.quiz_position - 1 === quizData.quiz_questions.length) {
+            const isQuizEnd = true;
+        } else {
+            const isQuizEnd = false;
+        }
 
         return (<div>
             <div className='QuizQuestion'>
