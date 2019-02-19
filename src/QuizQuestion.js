@@ -15,7 +15,7 @@ export class QuizQuestion extends Component {
             <li>{this.props.quiz_question.answer_options[0]}</li>
           </ul>
         </section>
-      </main>)
+      </main>);
     }
 }
 
