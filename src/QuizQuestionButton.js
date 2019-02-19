@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export class QuizQuestionButton extends Component {
+class QuizQuestionButton extends Component {
     constructor(props) {
         super(props);
     }
